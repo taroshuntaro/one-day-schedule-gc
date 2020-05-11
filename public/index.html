@@ -10,32 +10,12 @@
       content="Web site created using create-react-app"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
     <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div>
-      <!-- form
-        method="POST"
-        action="https://us-central1-one-day-schedule.cloudfunctions.net/oAuth2Authorize
-      "
-      >
-        <button type="submit">認証</button>
-      </form -->
       <p>Google Calendar API Quickstart</p>
 
       <!--Add buttons to initiate auth sequence and sign out-->
@@ -45,26 +25,9 @@
       <pre id="content" style="white-space: pre-wrap;"></pre>
 
       <script type="text/javascript">
-        /* cloud functions 調査中
-        window.addEventListener('load', function () {
-          getClientId();
-        });
-        function getClientId() {
-          var url = '/getClientId';
-          fetch(url)
-            .then(function (data) {
-              return data.text();
-            })
-            .then(function (text) {
-              console.log(text);
-              return text;
-            });
-        }
-        */
-
         // Client ID and API key from the Developer Console
         var CLIENT_ID =
-          '999416548479-nc7c7vd64pqedu1u3ch7c62qgq42frsh.apps.googleusercontent.com';
+          '999416548479-pt26rulk6eiqrvnldcnagvp1cd5aafvr.apps.googleusercontent.com'; // develop
         var API_KEY = 'AIzaSyCih4Q1kMp5E9ps0GqoGi17PBVOEpaiydA';
 
         // Array of API discovery doc URLs for APIs used by the quickstart
@@ -203,15 +166,5 @@
       ></script>
     </div>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
