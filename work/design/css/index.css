@@ -4,3 +4,12 @@ body {
   font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN',
     'Hiragino Sans', Meiryo, sans-serif;
 }
+
+.ods-schedule-head {
+  padding: 0.5rem;
+}
+
+.ods-schedule-box {
+  margin: 1rem !important;
+  padding: 0.5rem !important;
+}
