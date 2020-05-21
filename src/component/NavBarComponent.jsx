@@ -25,7 +25,7 @@ export default function NavBarComponent(props) {
     <React.Fragment>
       <AppBar position='fixed' style={{ backgroundColor: teal['A700'] }}>
         <Toolbar>
-          <TodayIcon className={classes.todayIcon}></TodayIcon>
+          <TodayIcon className={classes.todayIcon} />
           <Typography variant='h6' className={classes.title}>
             2020年5月11日（月）
           </Typography>
