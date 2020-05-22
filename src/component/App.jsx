@@ -2,8 +2,8 @@ import React from 'react';
 /** Material-UI module */
 import { makeStyles } from '@material-ui/core/styles';
 /** Custom module */
-import NavBarComponent from './NavBarComponent';
-import MainContainerComponent from './MainContainerComponent';
+import NavBar from './NavBar';
+import MainContainer from './MainContainer';
 
 const uiStyle = makeStyles((theme) => ({
   root: {
@@ -16,8 +16,8 @@ export default function App() {
 
   return (
     <div className={classes.root}>
-      <NavBarComponent></NavBarComponent>
-      <MainContainerComponent></MainContainerComponent>
+      <NavBar />
+      <MainContainer />
     </div>
   );
 }

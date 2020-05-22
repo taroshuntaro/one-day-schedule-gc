@@ -18,7 +18,7 @@ const uiStyle = makeStyles((theme) => ({
   offset: theme.mixins.toolbar,
 }));
 
-export default function NavBarComponent(props) {
+export default function NavBar(props) {
   const classes = uiStyle();
 
   return (

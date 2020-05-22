@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { grey } from '@material-ui/core/colors';
 /** Custom module */
-import ScheduleCardComponent from './ScheduleCardComponent';
+import ScheduleListWrap from './ScheduleListWrap';
 
 const uiStyle = makeStyles((theme) => ({
   container: {
@@ -14,12 +14,12 @@ const uiStyle = makeStyles((theme) => ({
   },
 }));
 
-export default function MainContainerComponent() {
+export default function MainContainer() {
   const classes = uiStyle();
 
   return (
     <Container maxWidth='md' className={classes.container}>
-      <ScheduleCardComponent />
+      <ScheduleListWrap />
     </Container>
   );
 }

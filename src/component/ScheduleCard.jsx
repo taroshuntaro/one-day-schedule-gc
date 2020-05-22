@@ -17,21 +17,16 @@ const uiStyle = makeStyles((theme) => ({
   span: {},
 }));
 
-export default function ScheduleCardComponent() {
+export default function ScheduleCard(prop) {
   const classes = uiStyle();
 
   return (
-    <React.Fragment>
-      <Box pb={2}>
-        <Card className={classes.card}>
-          <AccessTimeIcon fontSize='small' className={classes.accessTimeIcon} />
-          <time>12:00〜13:00</time>
-          <Typography>お昼ご飯</Typography>
-        </Card>
-      </Box>
-      <Box pb={2}>
-        <Card className={classes.card}>content</Card>
-      </Box>
-    </React.Fragment>
+    <Box pb={2}>
+      <Card className={classes.card}>
+        <AccessTimeIcon fontSize='small' className={classes.accessTimeIcon} />
+        <time>{prop.scheduleListData.time}</time>
+        <Typography>{prop.scheduleListData.title}</Typography>
+      </Card>
+    </Box>
   );
 }
