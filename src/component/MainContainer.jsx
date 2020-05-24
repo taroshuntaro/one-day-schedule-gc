@@ -4,13 +4,13 @@ import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import { grey } from '@material-ui/core/colors';
 /** Custom module */
-import ScheduleListWrap from './ScheduleListWrap';
+import ScheduleList from './ScheduleList';
 
 const uiStyle = makeStyles((theme) => ({
   container: {
     backgroundColor: grey[200],
     minHeight: '100vh',
-    paddingTop: '16px',
+    paddingTop: '1px',
   },
 }));
 
@@ -19,7 +19,7 @@ export default function MainContainer() {
 
   return (
     <Container maxWidth='md' className={classes.container}>
-      <ScheduleListWrap />
+      <ScheduleList />
     </Container>
   );
 }

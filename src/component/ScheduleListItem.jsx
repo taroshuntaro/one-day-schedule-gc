@@ -17,7 +17,7 @@ const uiStyle = makeStyles((theme) => ({
   span: {},
 }));
 
-export default function ScheduleCard(prop) {
+export default function ScheduleListItem(prop) {
   const classes = uiStyle();
 
   return (
